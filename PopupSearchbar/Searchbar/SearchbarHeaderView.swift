@@ -129,7 +129,7 @@ class SearchbarHeaderView: UIControl {
         
         addSubview(stackView)
         addSubview(tapView)
-        bringSubviewToFront(tapView)
+        bringSubview(toFront: tapView)
         
         stackView.addArrangedSubview(imageView)
         stackView.addArrangedSubview(textField)
