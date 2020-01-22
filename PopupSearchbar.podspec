@@ -9,7 +9,7 @@ This fantastic view changes its color gradually makes your app look fantastic!
  
   s.homepage         = 'https://github.com/intersignature/PopupSearchbar'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '<YOUR NAME HERE>' => '<YOUR EMAIL HERE>' }
+  s.author           = { 'Sirichai Binchai' => 'intersignature@hotmail.com' }
   s.source           = { :git => 'https://github.com/intersignature/PopupSearchbar.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '10.0'
