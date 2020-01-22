@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B26F6DAD23D86860009F73FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26F6DAC23D86860009F73FF /* AppDelegate.swift */; };
+		B26F6DAF23D86860009F73FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26F6DAE23D86860009F73FF /* SceneDelegate.swift */; };
+		B26F6DB123D86860009F73FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26F6DB023D86860009F73FF /* ViewController.swift */; };
+		B26F6DB423D86860009F73FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26F6DB223D86860009F73FF /* Main.storyboard */; };
+		B26F6DB623D86863009F73FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26F6DB523D86863009F73FF /* Assets.xcassets */; };
+		B26F6DB923D86863009F73FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26F6DB723D86863009F73FF /* LaunchScreen.storyboard */; };
+		B26F6DC423D86863009F73FF /* PopupSearchbarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26F6DC323D86863009F73FF /* PopupSearchbarTests.swift */; };
+		B26F6DCF23D86863009F73FF /* PopupSearchbarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26F6DCE23D86863009F73FF /* PopupSearchbarUITests.swift */; };
+		B26F6DE123D86870009F73FF /* SearchbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26F6DDD23D86870009F73FF /* SearchbarViewModel.swift */; };
+		B26F6DE223D86870009F73FF /* SearchbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26F6DDE23D86870009F73FF /* SearchbarView.swift */; };
+		B26F6DE323D86870009F73FF /* SearchbarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26F6DDF23D86870009F73FF /* SearchbarHeaderView.swift */; };
+		B26F6DE423D86870009F73FF /* SearchbarResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26F6DE023D86870009F73FF /* SearchbarResultView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B26F6DC023D86863009F73FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B26F6DA123D86860009F73FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B26F6DA823D86860009F73FF;
+			remoteInfo = PopupSearchbar;
+		};
+		B26F6DCB23D86863009F73FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B26F6DA123D86860009F73FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B26F6DA823D86860009F73FF;
+			remoteInfo = PopupSearchbar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B26F6DA923D86860009F73FF /* PopupSearchbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopupSearchbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26F6DAC23D86860009F73FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B26F6DAE23D86860009F73FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B26F6DB023D86860009F73FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B26F6DB323D86860009F73FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B26F6DB523D86863009F73FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B26F6DB823D86863009F73FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B26F6DBA23D86863009F73FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26F6DBF23D86863009F73FF /* PopupSearchbarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopupSearchbarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26F6DC323D86863009F73FF /* PopupSearchbarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSearchbarTests.swift; sourceTree = "<group>"; };
+		B26F6DC523D86863009F73FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26F6DCA23D86863009F73FF /* PopupSearchbarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopupSearchbarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26F6DCE23D86863009F73FF /* PopupSearchbarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSearchbarUITests.swift; sourceTree = "<group>"; };
+		B26F6DD023D86863009F73FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26F6DDD23D86870009F73FF /* SearchbarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchbarViewModel.swift; sourceTree = "<group>"; };
+		B26F6DDE23D86870009F73FF /* SearchbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchbarView.swift; sourceTree = "<group>"; };
+		B26F6DDF23D86870009F73FF /* SearchbarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchbarHeaderView.swift; sourceTree = "<group>"; };
+		B26F6DE023D86870009F73FF /* SearchbarResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchbarResultView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B26F6DA623D86860009F73FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26F6DBC23D86863009F73FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26F6DC723D86863009F73FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B26F6DA023D86860009F73FF = {
+			isa = PBXGroup;
+			children = (
+				B26F6DAB23D86860009F73FF /* PopupSearchbar */,
+				B26F6DC223D86863009F73FF /* PopupSearchbarTests */,
+				B26F6DCD23D86863009F73FF /* PopupSearchbarUITests */,
+				B26F6DAA23D86860009F73FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B26F6DAA23D86860009F73FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B26F6DA923D86860009F73FF /* PopupSearchbar.app */,
+				B26F6DBF23D86863009F73FF /* PopupSearchbarTests.xctest */,
+				B26F6DCA23D86863009F73FF /* PopupSearchbarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B26F6DAB23D86860009F73FF /* PopupSearchbar */ = {
+			isa = PBXGroup;
+			children = (
+				B26F6DDC23D86870009F73FF /* Searchbar */,
+				B26F6DAC23D86860009F73FF /* AppDelegate.swift */,
+				B26F6DAE23D86860009F73FF /* SceneDelegate.swift */,
+				B26F6DB023D86860009F73FF /* ViewController.swift */,
+				B26F6DB223D86860009F73FF /* Main.storyboard */,
+				B26F6DB523D86863009F73FF /* Assets.xcassets */,
+				B26F6DB723D86863009F73FF /* LaunchScreen.storyboard */,
+				B26F6DBA23D86863009F73FF /* Info.plist */,
+			);
+			path = PopupSearchbar;
+			sourceTree = "<group>";
+		};
+		B26F6DC223D86863009F73FF /* PopupSearchbarTests */ = {
+			isa = PBXGroup;
+			children = (
+				B26F6DC323D86863009F73FF /* PopupSearchbarTests.swift */,
+				B26F6DC523D86863009F73FF /* Info.plist */,
+			);
+			path = PopupSearchbarTests;
+			sourceTree = "<group>";
+		};
+		B26F6DCD23D86863009F73FF /* PopupSearchbarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B26F6DCE23D86863009F73FF /* PopupSearchbarUITests.swift */,
+				B26F6DD023D86863009F73FF /* Info.plist */,
+			);
+			path = PopupSearchbarUITests;
+			sourceTree = "<group>";
+		};
+		B26F6DDC23D86870009F73FF /* Searchbar */ = {
+			isa = PBXGroup;
+			children = (
+				B26F6DDD23D86870009F73FF /* SearchbarViewModel.swift */,
+				B26F6DDE23D86870009F73FF /* SearchbarView.swift */,
+				B26F6DDF23D86870009F73FF /* SearchbarHeaderView.swift */,
+				B26F6DE023D86870009F73FF /* SearchbarResultView.swift */,
+			);
+			path = Searchbar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B26F6DA823D86860009F73FF /* PopupSearchbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26F6DD323D86863009F73FF /* Build configuration list for PBXNativeTarget "PopupSearchbar" */;
+			buildPhases = (
+				B26F6DA523D86860009F73FF /* Sources */,
+				B26F6DA623D86860009F73FF /* Frameworks */,
+				B26F6DA723D86860009F73FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopupSearchbar;
+			productName = PopupSearchbar;
+			productReference = B26F6DA923D86860009F73FF /* PopupSearchbar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B26F6DBE23D86863009F73FF /* PopupSearchbarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26F6DD623D86863009F73FF /* Build configuration list for PBXNativeTarget "PopupSearchbarTests" */;
+			buildPhases = (
+				B26F6DBB23D86863009F73FF /* Sources */,
+				B26F6DBC23D86863009F73FF /* Frameworks */,
+				B26F6DBD23D86863009F73FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B26F6DC123D86863009F73FF /* PBXTargetDependency */,
+			);
+			name = PopupSearchbarTests;
+			productName = PopupSearchbarTests;
+			productReference = B26F6DBF23D86863009F73FF /* PopupSearchbarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B26F6DC923D86863009F73FF /* PopupSearchbarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26F6DD923D86863009F73FF /* Build configuration list for PBXNativeTarget "PopupSearchbarUITests" */;
+			buildPhases = (
+				B26F6DC623D86863009F73FF /* Sources */,
+				B26F6DC723D86863009F73FF /* Frameworks */,
+				B26F6DC823D86863009F73FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B26F6DCC23D86863009F73FF /* PBXTargetDependency */,
+			);
+			name = PopupSearchbarUITests;
+			productName = PopupSearchbarUITests;
+			productReference = B26F6DCA23D86863009F73FF /* PopupSearchbarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B26F6DA123D86860009F73FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Sirichai Binchai";
+				TargetAttributes = {
+					B26F6DA823D86860009F73FF = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					B26F6DBE23D86863009F73FF = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = B26F6DA823D86860009F73FF;
+					};
+					B26F6DC923D86863009F73FF = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = B26F6DA823D86860009F73FF;
+					};
+				};
+			};
+			buildConfigurationList = B26F6DA423D86860009F73FF /* Build configuration list for PBXProject "PopupSearchbar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B26F6DA023D86860009F73FF;
+			productRefGroup = B26F6DAA23D86860009F73FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B26F6DA823D86860009F73FF /* PopupSearchbar */,
+				B26F6DBE23D86863009F73FF /* PopupSearchbarTests */,
+				B26F6DC923D86863009F73FF /* PopupSearchbarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B26F6DA723D86860009F73FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26F6DB923D86863009F73FF /* LaunchScreen.storyboard in Resources */,
+				B26F6DB623D86863009F73FF /* Assets.xcassets in Resources */,
+				B26F6DB423D86860009F73FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26F6DBD23D86863009F73FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26F6DC823D86863009F73FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B26F6DA523D86860009F73FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26F6DB123D86860009F73FF /* ViewController.swift in Sources */,
+				B26F6DE423D86870009F73FF /* SearchbarResultView.swift in Sources */,
+				B26F6DE323D86870009F73FF /* SearchbarHeaderView.swift in Sources */,
+				B26F6DAD23D86860009F73FF /* AppDelegate.swift in Sources */,
+				B26F6DE223D86870009F73FF /* SearchbarView.swift in Sources */,
+				B26F6DE123D86870009F73FF /* SearchbarViewModel.swift in Sources */,
+				B26F6DAF23D86860009F73FF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26F6DBB23D86863009F73FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26F6DC423D86863009F73FF /* PopupSearchbarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26F6DC623D86863009F73FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26F6DCF23D86863009F73FF /* PopupSearchbarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B26F6DC123D86863009F73FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B26F6DA823D86860009F73FF /* PopupSearchbar */;
+			targetProxy = B26F6DC023D86863009F73FF /* PBXContainerItemProxy */;
+		};
+		B26F6DCC23D86863009F73FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B26F6DA823D86860009F73FF /* PopupSearchbar */;
+			targetProxy = B26F6DCB23D86863009F73FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B26F6DB223D86860009F73FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B26F6DB323D86860009F73FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B26F6DB723D86863009F73FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B26F6DB823D86863009F73FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B26F6DD123D86863009F73FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B26F6DD223D86863009F73FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B26F6DD423D86863009F73FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4D9F78GB2;
+				INFOPLIST_FILE = PopupSearchbar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = intersignature.PopupSearchbar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B26F6DD523D86863009F73FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4D9F78GB2;
+				INFOPLIST_FILE = PopupSearchbar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = intersignature.PopupSearchbar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B26F6DD723D86863009F73FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4D9F78GB2;
+				INFOPLIST_FILE = PopupSearchbarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = intersignature.PopupSearchbarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PopupSearchbar.app/PopupSearchbar";
+			};
+			name = Debug;
+		};
+		B26F6DD823D86863009F73FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4D9F78GB2;
+				INFOPLIST_FILE = PopupSearchbarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = intersignature.PopupSearchbarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PopupSearchbar.app/PopupSearchbar";
+			};
+			name = Release;
+		};
+		B26F6DDA23D86863009F73FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4D9F78GB2;
+				INFOPLIST_FILE = PopupSearchbarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = intersignature.PopupSearchbarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PopupSearchbar;
+			};
+			name = Debug;
+		};
+		B26F6DDB23D86863009F73FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4D9F78GB2;
+				INFOPLIST_FILE = PopupSearchbarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = intersignature.PopupSearchbarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PopupSearchbar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B26F6DA423D86860009F73FF /* Build configuration list for PBXProject "PopupSearchbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26F6DD123D86863009F73FF /* Debug */,
+				B26F6DD223D86863009F73FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B26F6DD323D86863009F73FF /* Build configuration list for PBXNativeTarget "PopupSearchbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26F6DD423D86863009F73FF /* Debug */,
+				B26F6DD523D86863009F73FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B26F6DD623D86863009F73FF /* Build configuration list for PBXNativeTarget "PopupSearchbarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26F6DD723D86863009F73FF /* Debug */,
+				B26F6DD823D86863009F73FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B26F6DD923D86863009F73FF /* Build configuration list for PBXNativeTarget "PopupSearchbarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26F6DDA23D86863009F73FF /* Debug */,
+				B26F6DDB23D86863009F73FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B26F6DA123D86860009F73FF /* Project object */;
+}
