@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PopupSearchbar'
-  s.version          = '0.1.0'
-  s.summary          = 'To display search bar view and popup result view'
+  s.version          = '0.1.1'
+  s.summary          = 'update swift 5'
  
   s.description      = <<-DESC
 Make popup search bar !!!!
