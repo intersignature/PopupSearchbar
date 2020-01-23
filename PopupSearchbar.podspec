@@ -14,5 +14,6 @@ Make popup search bar !!!!
  
   s.ios.deployment_target = '13.1'
   s.source_files = 'PopupSearchbar/Searchbar/*.swift'
+  s.swift_version = '5.0'
  
 end
