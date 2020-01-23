@@ -12,7 +12,7 @@ Make popup search bar !!!!
   s.author           = { 'Sirichai Binchai' => 'intersignature@hotmail.com' }
   s.source           = { :git => 'https://github.com/intersignature/PopupSearchbar.git', :tag => s.version.to_s }
  
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.1'
   s.source_files = 'PopupSearchbar/Searchbar/*.swift'
  
 end

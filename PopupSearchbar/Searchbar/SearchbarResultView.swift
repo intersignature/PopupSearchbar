@@ -124,12 +124,12 @@ class SearchbarResultView: UIControl {
             isHidden = true
         }
         NSLayoutConstraint.deactivate(tableView.constraints)
-        tableView.heightAnchor.constraint(equalToConstant: CGFloat.minimum((rowHeight * CGFloat(count))+20, UIScreen.main.bounds.size.height)).isActive = true
+        tableView.heightAnchor.constraint(equalToConstant: CGFloat.minimum((rowHeight * CGFloat(count))+40, UIScreen.main.bounds.size.height)).isActive = true
         oldCount = count
         if count == 0 {
             return CGSize(width: UIScreen.main.bounds.size.width, height: rowHeight)
         } else {
-            return CGSize(width: UIScreen.main.bounds.size.width, height: CGFloat.minimum((rowHeight * CGFloat(count))+20, UIScreen.main.bounds.size.height))
+            return CGSize(width: UIScreen.main.bounds.size.width, height: CGFloat.minimum((rowHeight * CGFloat(count))+40, UIScreen.main.bounds.size.height))
         }
     }
     

@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var searchbarView: SearchbarView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        searchbarView.models = [SearchModel(id: 1, value: "a"), SearchModel(id: 2, value: "b"), SearchModel(id: 3, value: "c"), SearchModel(id: 4, value: "d"), SearchModel(id: 5, value: "e"), SearchModel(id: 6, value: "f"), SearchModel(id: 7, value: "g")]
     }
 
 
