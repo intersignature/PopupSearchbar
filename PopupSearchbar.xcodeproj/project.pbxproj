@@ -140,10 +140,10 @@
 		B26F6DDC23D86870009F73FF /* Searchbar */ = {
 			isa = PBXGroup;
 			children = (
-				B26F6DDD23D86870009F73FF /* SearchbarViewModel.swift */,
 				B26F6DDE23D86870009F73FF /* SearchbarView.swift */,
 				B26F6DDF23D86870009F73FF /* SearchbarHeaderView.swift */,
 				B26F6DE023D86870009F73FF /* SearchbarResultView.swift */,
+				B26F6DDD23D86870009F73FF /* SearchbarViewModel.swift */,
 			);
 			path = Searchbar;
 			sourceTree = "<group>";

@@ -12,6 +12,7 @@ protocol SearchbarHeaderDelegate {
     func textFieldDidChange(_ textField: UITextField)
     func textFieldDidBeginEditing(_ textField: UITextField)
     func textFieldDidEndEditing(_ textField: UITextField)
+    func textFieldShouldReturn(_ textField: UITextField)
     func headerDidTapAtTapView()
     func headerDidTapCloseView()
 }
@@ -69,7 +70,8 @@ class SearchbarHeaderView: UIControl {
     
     lazy var imageView: UIImageView = {
         let i = UIImageView(frame: CGRect(x: 0, y: 0, width: 16, height: 16))
-        i.image = UIImage(named: "icons16PxSearch")
+//        i.image = UIImage(named: "icons16PxSearch")
+        i.isHidden = true
         i.setContentHuggingPriority(UILayoutPriority(rawValue: 251), for: .horizontal)
         i.translatesAutoresizingMaskIntoConstraints = false
         i.contentMode = .scaleAspectFit
@@ -100,7 +102,8 @@ class SearchbarHeaderView: UIControl {
     lazy var tapView: UIView = {
         let v = UIView(frame: .zero)
         v.translatesAutoresizingMaskIntoConstraints = false
-        v.backgroundColor = .clear
+        v.backgroundColor = .yellow
+        v.isHidden = true
         return v
     }()
     
@@ -117,6 +120,8 @@ class SearchbarHeaderView: UIControl {
     }
     
     func shareInitialization() {
+        
+        backgroundColor = .white
         
         addTapGesture()
         addTapViewGesture()
@@ -194,5 +199,11 @@ extension SearchbarHeaderView: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         isActive = false
         delegate?.textFieldDidEndEditing(textField)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.endEditing(true)
+        delegate?.textFieldShouldReturn(textField)
+        return true
     }
 }

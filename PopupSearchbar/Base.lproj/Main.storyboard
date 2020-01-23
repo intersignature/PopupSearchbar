@@ -16,26 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ejn-UD-lhM" customClass="SearchbarView" customModule="PopupSearchbar" customModuleProvider="target">
-                                <rect key="frame" x="8" y="83" width="398" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRD-Ll-fYx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="398" placeholderIntrinsicHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="ejn-UD-lhM" customClass="SearchbarView" customModule="PopupSearchbar" customModuleProvider="target">
+                                <rect key="frame" x="8" y="52" width="398" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ejn-UD-lhM" secondAttribute="trailing" constant="8" id="3lc-EF-jTu"/>
                             <constraint firstItem="ejn-UD-lhM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="4jW-tf-Fwo"/>
+                            <constraint firstItem="iRD-Ll-fYx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EtH-JN-QPh"/>
+                            <constraint firstAttribute="bottom" secondItem="iRD-Ll-fYx" secondAttribute="bottom" id="Fcz-vA-pul"/>
                             <constraint firstItem="ejn-UD-lhM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="GFY-Zj-exQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iRD-Ll-fYx" secondAttribute="trailing" id="UCn-bO-FHB"/>
+                            <constraint firstItem="iRD-Ll-fYx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bfm-2t-XXg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="searchbarView" destination="ejn-UD-lhM" id="uac-fW-pWS"/>
+                        <outlet property="searchbarView" destination="ejn-UD-lhM" id="E9I-Mm-deU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>

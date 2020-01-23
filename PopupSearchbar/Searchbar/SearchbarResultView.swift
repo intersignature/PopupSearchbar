@@ -23,6 +23,7 @@ class SearchbarResultView: UIControl {
     var selectedRow: Int = 0
     var oldCount: Int = 0
     var rowHeight: CGFloat = 42.5
+    var tableSize: CGSize = .zero
     var delegate: SearchbarResultDelegate?
     var viewModel = ResultSearchbarViewModel()
     
@@ -36,7 +37,9 @@ class SearchbarResultView: UIControl {
         didSet {
             viewModel.datasource?.models = models
             count = models.count
-            tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
     
@@ -53,10 +56,10 @@ class SearchbarResultView: UIControl {
     lazy var titleLabel: UILabel = {
         let l = UILabel(frame: .zero)
         l.text = "title"
-        l.backgroundColor = .lightGray
+//        l.backgroundColor = .lightGray
         l.translatesAutoresizingMaskIntoConstraints = false
         l.font = .systemFont(ofSize: 22)
-        l.textColor = .darkGray
+//        l.textColor = .darkGray
         return l
     }()
     
@@ -66,9 +69,9 @@ class SearchbarResultView: UIControl {
         t.translatesAutoresizingMaskIntoConstraints = false
         
         let v = UIView()
-        v.backgroundColor = .lightGray
+        v.backgroundColor = .clear
         
-        t.backgroundColor = .lightGray
+        t.backgroundColor = .clear
         t.backgroundView = v
         return t
     }()
@@ -78,7 +81,7 @@ class SearchbarResultView: UIControl {
         l.translatesAutoresizingMaskIntoConstraints = false
         l.isUserInteractionEnabled = true
         l.font = .boldSystemFont(ofSize: 18)
-        l.textColor = .darkGray
+//        l.textColor = .darkGray
         l.text = "text"
         l.textAlignment = .center
         return l
@@ -97,6 +100,8 @@ class SearchbarResultView: UIControl {
     }
     
     func shareInitialization() {
+        
+        backgroundColor = .yellow
         
         let clearHistory: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleClearHistory(_:)))
         footerLabel.addGestureRecognizer(clearHistory)
@@ -127,9 +132,11 @@ class SearchbarResultView: UIControl {
         tableView.heightAnchor.constraint(equalToConstant: CGFloat.minimum((rowHeight * CGFloat(count))+40, UIScreen.main.bounds.size.height)).isActive = true
         oldCount = count
         if count == 0 {
-            return CGSize(width: UIScreen.main.bounds.size.width, height: rowHeight)
+            tableSize = CGSize(width: UIScreen.main.bounds.size.width, height: rowHeight)
+            return tableSize
         } else {
-            return CGSize(width: UIScreen.main.bounds.size.width, height: CGFloat.minimum((rowHeight * CGFloat(count))+40, UIScreen.main.bounds.size.height))
+            tableSize = CGSize(width: UIScreen.main.bounds.size.width, height: CGFloat.minimum((rowHeight * CGFloat(count))+40, UIScreen.main.bounds.size.height))
+            return tableSize
         }
     }
     

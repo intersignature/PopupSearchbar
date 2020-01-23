@@ -29,7 +29,7 @@ class ResultSearchbarDatasource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.row]
         let cell = UITableViewCell()
-        cell.backgroundColor = .green
+        cell.backgroundColor = .clear
         cell.textLabel?.text = model.value
         return cell
     }
