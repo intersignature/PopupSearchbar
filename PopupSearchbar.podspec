@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PopupSearchbar'
-  s.version          = '0.1.3'
-  s.summary          = 'test dup dependency'
+  s.version          = '0.1.4'
+  s.summary          = 'test dup dependency lower version'
  
   s.description      = <<-DESC
 Make popup search bar !!!!
@@ -16,5 +16,5 @@ Make popup search bar !!!!
   s.source_files = 'PopupSearchbar/Searchbar/*.swift'
   s.resources = 'PopupSearchbar/*.xcassets'
   s.swift_version = '5.0'
-  s.dependency 'Alamofire', '~> 4.9.1'
+  s.dependency 'Alamofire', '~> 4.9.0'
 end
