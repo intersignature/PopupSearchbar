@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary          = 'To display search bar view and popup result view'
  
   s.description      = <<-DESC
-This fantastic view changes its color gradually makes your app look fantastic!
+Make popup search bar !!!!
                        DESC
  
   s.homepage         = 'https://github.com/intersignature/PopupSearchbar'
