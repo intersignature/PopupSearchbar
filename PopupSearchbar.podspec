@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PopupSearchbar'
-  s.version          = '0.1.1'
-  s.summary          = 'update swift 5'
+  s.version          = '0.1.2'
+  s.summary          = 'update parameters'
  
   s.description      = <<-DESC
 Make popup search bar !!!!
@@ -14,6 +14,7 @@ Make popup search bar !!!!
  
   s.ios.deployment_target = '10.0'
   s.source_files = 'PopupSearchbar/Searchbar/*.swift'
+  s.resources = 'PopupSearchbar/*.xcassets'
   s.swift_version = '5.0'
  
 end
